@@ -2197,7 +2197,6 @@ Silahkan Pilih Untuk Menampilkan Menu Bot
 *❍⃝⃘۪۪۪👤YourName* : *${pushname}*
 *❍⃝⃘۪۪۪🔑Title* : *${isOwner ? 'Owner' : 'User'}*
 *❍⃝⃘۪۪۪👑Creator* : *@${NomorOwner}*
-*❍⃝⃘۪۪۪📨MyEmail* : *${settings.Mail}*
 *❍⃝⃘۪۪۪❔Prefix* : *『 ${prefix} 』*
 *❍⃝⃘۪۪۪📌Online* : *${waktu(runtime)}*
 *❍⃝⃘۪۪۪⏱️Ping* : *${latensi.toFixed(4)} Second*
@@ -2208,7 +2207,7 @@ Silahkan Pilih Untuk Menampilkan Menu Bot
 *❍⃝⃘۪۪۪🖥Platform* : *${os.platform()}*
 
 `
-sendButDocument(from, `${menu}`, "Base : Helga\nBase Ini Sedang Dalam Tahap Pengembangan, Gunakan Bot Dengan Sebaik Mungkin!", fs.readFileSync('./helga.jpg'), {mimetype:Mimetype.pdf, thumbnail:ofrply, filename:`𝚉𝚞𝚔𝚊𝙲𝚑𝚊𝚗 𝚅3.0.0`}, [{buttonId:`${prefix}allmenu`,buttonText:{displayText:'Menu 🎋'},type:1},{buttonId:`${prefix}owner`,buttonText:{displayText:'Author 🍁'},type:1},{buttonId:`${prefix}gcbot`,buttonText:{displayText:'Group Bot 🎉'},type:1}], {quoted:fmen, contextInfo: { mentionedJid: [dtod,otod,stod], forwardingScore: 508, isForwarded: true, externalAdReply:{title:`𝚉𝚞𝚔𝚊𝙱𝚘𝚝𝚝 𝙼𝚊𝚍𝚎 𝙱𝚢 𝙷𝚎𝚕𝚐𝚊`,body:`𝙼𝚊𝚍𝚎 𝙱𝚢 𝙷𝚎𝚕𝚐𝚊`,mediaType:"2",thumbnail:ofrply,mediaUrl:`https://youtu.be/bF7K7KL7dVY`}}})
+sendButDocument(from, `${menu}`, "Base : HENTAI\nBase Superior", fs.readFileSync('./helga.jpg'), {mimetype:Mimetype.pdf, thumbnail:ofrply, filename:`𝚉𝚞𝚔𝚊𝙲𝚑𝚊𝚗 𝚅3.0.0`}, [{buttonId:`${prefix}allmenu`,buttonText:{displayText:'Menu 🎋'},type:1},{buttonId:`${prefix}owner`,buttonText:{displayText:'Author 🍁'},type:1},{buttonId:`${prefix}gcbot`,buttonText:{displayText:'Group Bot 🎉'},type:1}], {quoted:fmen, contextInfo: { mentionedJid: [dtod,otod,stod], forwardingScore: 508, isForwarded: true, externalAdReply:{title:`𝚉𝚞𝚔𝚊𝙱𝚘𝚝𝚝 𝙼𝚊𝚍𝚎 𝙱𝚢 𝙷𝚎𝚕𝚐𝚊`,body:`𝙼𝚊𝚍𝚎 𝙱𝚢 𝙷𝚎𝚕𝚐𝚊`,mediaType:"2",thumbnail:ofrply,mediaUrl:`https://youtu.be/bF7K7KL7dVY`}}})
 break
 case 'bugreport':
               if (args.length < 1) return reply(`Ketik ${prefix}bugreport [fiturnya] [Error Nya Gimana]`) 
