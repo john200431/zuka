@@ -305,7 +305,7 @@ try {
 		const dfrply = fs.readFileSync('./helga.jpg')
 		cmhit.push(command)
         mess = {
-			wait: '𝗧𝘂𝗻𝗴𝗴𝘂 𝗦𝗲𝗯𝗲𝗻𝘁𝗮𝗿!',
+			wait: 'Conexion Fallida...!',
 			success: '𝗕𝗲𝗿𝗵𝗮𝘀𝗶𝗹!',
 			toxic: 'Jangan Toxic!',
 			error: {
@@ -371,7 +371,7 @@ let settingstatus = 0;
       let _uptime = process.uptime() * 1000;
       let uptime = clockString(_uptime);
 
-await helga.setStatus(`❄️Base Helga | ⛈️Running Time : ${uptime}`).catch((_) => _);
+await helga.setStatus(`❄️Base Hentai| ⛈️Running Time : ${uptime}`).catch((_) => _);
       settingstatus = new Date() * 1;
 }
 		idttt = []
@@ -495,8 +495,8 @@ const ftrol = {
                             itemCount : 123,
                             status: 1,
                             surface : 1,
-                            message: `Subscribe YouTube Channel\nHelga Zex's!`, //Kasih namalu
-                            orderTitle: `Subscribe YouTube Channel\nHelga Zex's!`,
+                            message: `Created By\nHentai-Bot`, //Kasih namalu
+                            orderTitle: `Created By\nHentai-Bot`,
                             thumbnail: dfrply, //Gambarnye
                             sellerJid: '0@s.whatsapp.net' 
                           }
@@ -715,8 +715,8 @@ options
 );
 };
 
-const daftar1 = `Hai kak  ${pushname} ${tampilUcapan} \n\nSebelum Mengakses Bot Verify Terlebih Dahulu Ya`
-const daftar2 = '```Ketik Tombol Di Bawah Untuk Mendaftar Ke Database Helga Zex```'
+const daftar1 = `Hola  ${pushname} ${tampilUcapan} \n\Antes de acceder al bot, verifique primero Sí`
+const daftar2 = '```Escriba el botón a continuación para registrarse en la base de datos```'
 const daftar3 = [{buttonId: `verify`,buttonText: {displayText: `🌸𝙍𝙀𝙂𝙄𝙎𝙏𝙍𝙀𝘿 `,},type: 1,},]
 
 const createSerial = (size) => {
@@ -1229,26 +1229,17 @@ break
 			 stst = await helga.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 menu = `
-Hai Kak ${pushname}, ${tampilUcapan}
-Silahkan Ketik Command Berikut
-Untuk Menampilkan Menu Bot
+Hola ${pushname}, ${tampilUcapan}
+_Escriba el siguiente comando
+Para mostrar el menú del bot_
 
 
 _⫹⫺🎯Library : Baileys-script_
 _⫹⫺🍰Version : 4.2.8_
 _⫹⫺🍧Language : Javascript_
-_⫹⫺📯Author : Helga Zex's_
+_⫹⫺📯Author : Hentai-Bot_
 _⫹⫺💬Time : ${timeWib} WIB_
 
-┌❏ FREE REST API's
-│◦➛ https://api-helgazex.herokuapp.com
-└❏ MY ALL SOSMED
-│◦➛ https://github.com/HelgaIlham
-│◦➛ https://tiktok.com/@ilhamgz_20
-│◦➛ https://bit.ly/HelgaOfficials
-│◦➛ https://bit.ly/Helgazex
-│◦➛ https://discord.gg/6EenvMEg7k
-└❏  
 
 ┌❏ INDONESIA TIME
 │◦➛ WIB : ${timeWib}
@@ -1271,7 +1262,6 @@ _⫹⫺💬Time : ${timeWib} WIB_
 │ • ${prefix}tiktoknowm
 │ • ${prefix}igdl [ Link ]
 │ • ${prefix}ytsearch [ query ]
-│ • ${prefix}mediafire [ Link ]
 ╰────
 
 
@@ -1626,13 +1616,13 @@ _⫹⫺💬Time : ${timeWib} WIB_
 │ • ${prefix}attp
 ╰────
 `
-sendButDocument(from, `${menu}`, "Big Thanks To\n\nAllah SWT\nMy Parrent\nZukaChan\nHelga Ilham\nAgus\nAll Creator Bot Wa", fs.readFileSync('./helga.jpg'), {mimetype:Mimetype.pdf, thumbnail:ofrply, filename:`𝚉𝚞𝚔𝚊𝙲𝚑𝚊𝚗 𝚅3.0.0`}, [{buttonId:`about`,buttonText:{displayText:'About 🐋'},type:1},{buttonId:`simple`,buttonText:{displayText:'Simple Menu 🐋'},type:1}], {quoted:fmen, contextInfo: { mentionedJid: [dtod,otod,stod], forwardingScore: 508, isForwarded: true, externalAdReply:{title:`𝚉𝚞𝚔𝚊𝙱𝚘𝚝𝚝 𝙼𝚊𝚍𝚎 𝙱𝚢 𝙷𝚎𝚕𝚐𝚊`,body:`𝙼𝚊𝚍𝚎 𝙱𝚢 𝙷𝚎𝚕𝚐𝚊`,mediaType:"2",thumbnail:ofrply,mediaUrl:`https://youtu.be/bF7K7KL7dVY`}}})
+sendButDocument(from, `${menu}`, "Created By Hentai", fs.readFileSync('./helga.jpg'), {mimetype:Mimetype.pdf, thumbnail:ofrply, filename:`𝚉𝚞𝚔𝚊𝙲𝚑𝚊𝚗 𝚅3.0.0`}, [{buttonId:`about`,buttonText:{displayText:'About 🐋'},type:1},{buttonId:`simple`,buttonText:{displayText:'Simple Menu 🐋'},type:1}], {quoted:fmen, contextInfo: { mentionedJid: [dtod,otod,stod], forwardingScore: 508, isForwarded: true, externalAdReply:{title:`𝚉𝚞𝚔𝚊𝙱𝚘𝚝𝚝 𝙼𝚊𝚍𝚎 𝙱𝚢 𝙷𝚎𝚕𝚐𝚊`,body:`𝙼𝚊𝚍𝚎 𝙱𝚢 𝙷𝚎𝚕𝚐𝚊`,mediaType:"2",thumbnail:ofrply,mediaUrl:`https://youtu.be/bF7K7KL7dVY`}}})
 break
 case 'simple':
  stod = `${sender}`
  listMsg = {
  buttonText: 'Simple Menu Zuka',
- footerText: '*ZukaBase*',
+ footerText: 'HENTAI-BOT*',
  description: `Hai Kak @${stod.split('@')[0]}\nGunakan Bot Dengan Bijak Yaa..\n\n️💬 ${tampilUcapan}\n⏰ Jam : ${jmn}\n🌄 Hari : ${week} ${weton}\n🗓️ Tanggal : ${calender}\n`,
  sections: [
                      {
@@ -2817,7 +2807,7 @@ anu =`Silahkan pilih salah satu di bawah`
  buttons = [{buttonId: 'setallmenu ori', buttonText: {displayText: 'ORI'}, type: 1},{buttonId: 'setallmenu simpel', buttonText: {displayText: 'SIMPEL'}, type: 1}]
 const skuygf = {
     contentText: `${anu}`,
-    footerText: '*𝚉𝚞𝚔𝚊𝙲𝚑𝚊𝚗 𝚅3.0.0*',
+    footerText: '*HENTAI-BOT*',
     buttons: buttons,
     headerType: 1
 }
@@ -2825,23 +2815,6 @@ await helga.sendMessage(from, skuygf, MessageType.buttonsMessage, {quoted: ftrol
 }
 break
 //Sampai sini
-case 'jadibot':
-if (!isRegistered) return reply(`Registrasi dulu Kak ketik .verify`)
-menu = `Enak aja lu mau numpang sewa lah :v`
-katalog(menu)
-sendButLocation(from, `Hai ${pushname} ☺️`, "*_© 𝙰𝚢𝚊𝚊 𝚅2.ೃ࿐_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}sewa`,buttonText:{displayText:'SEWA 🎟️'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'stopjadibot':
-if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-try {
-reply('Oke')
-fs.unlinkSync(`./sampah/${sender}.json`)
-client.close()
-} catch {
-reply('Oke')
-client.close()
-}
-break
 case 'owner':
 	case 'creator':
 case 'developer':
@@ -2851,7 +2824,7 @@ for (let i of ownerNumber) {
 const vname = helga.contacts[i] != undefined ? helga.contacts[i].vname || helga.contacts[i].notify : undefined
 ini_list.push({
 "displayName": `Author ${NamaBot}`,
-"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;𝐇𝐞𝐥𝐠𝐚 𝐙𝐞𝐱!;;;\nFN:${vname ? `${vname}` : `${helga.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy; HENTAI-BOT;;;\nFN:${vname ? `${vname}` : `${helga.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
 helga.sendMessage(from, {
@@ -2955,28 +2928,6 @@ case 'google':
                reply(`${e}`)
 })
                break
-        case 'mediafire':
-        
-   if (!isRegistered) return reply(`Registrasi Dulu Kak Ketik .verify`)
-               if (!isPremium) return reply(mess.only.premium)
-               if (args.length < 1) return reply('Link Nya Mana? ')
-               if(!isUrl(args[0]) && !args[0].includes('mediafire')) return reply(mess.error.Iv)
-               reply(mess.wait)
-               teks = args.join(' ')
-               res = await mediafireDl(teks)
-               result = `┏┉⌣ ┈̥-̶̯͡..̷̴✽̶┄┈┈┈┈┈┈┈┈┈┈┉┓
-┆ *MEDIAFIRE DOWNLOAD*
-└┈┈┈┈┈┈┈┈┈┈┈⌣ ┈̥-̶̯͡..̷̴✽̶⌣ ✽̶
-
-*Data Berhasil Didapatkan!*
-\`\`\`◧ Nama : ${res[0].nama}\`\`\`
-\`\`\`◧ Ukuran : ${res[0].size}\`\`\`
-\`\`\`◧ Link : ${res[0].link}\`\`\`
-
-_*Tunggu Proses Upload Media......*_`
-             reply(result)
-             sendFileFromUrl(res[0].link, document, {mimetype: res[0].mime, filename: res[0].nama, quoted: ftrol})
-             break
                 case 'antidelete':
       if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
            if (c === 'on'){
@@ -2990,7 +2941,7 @@ _*Tunggu Proses Upload Media......*_`
 const buttons = [{buttonId: 'antideletee on', buttonText: {displayText: 'ON✔️'}, type: 1},{buttonId: 'antideletee off', buttonText: {displayText: 'OFF✖️'}, type: 1}]
 const buttonMessage = {
     contentText: `${anu}`,
-    footerText: '*𝚉𝚞𝚔𝚊𝙲𝚑𝚊𝚗 𝚅3.0.0*',
+    footerText: '*Hentai 𝚅3.0.0*',
     buttons: buttons,
     headerType: 1
 }
