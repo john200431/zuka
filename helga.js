@@ -3708,68 +3708,6 @@ break
 *Youtube Download*
  *🎄Judul :* ${res.all[0].title}
  *🎉ID Video :* ${res.all[0].videoId}
- *🎋Diupload Pada :* ${res.all[0].ago}
- *🗺Views :* ${res.all[0].views}
- *📻Durasi :* ${res.all[0].timestamp}
- *⛽Channel :* ${res.all[0].author.name}
- *🔗Link Video :* ${res.all[0].url}
-
-*Pilih Media Yang Akan Di Download*
-`
-buttons = [{buttonId:`.ytmp3 ${res.all[0].url}`,buttonText:{displayText:'🎵AUDIO'},type:1},{buttonId:`ytmp4 ${res.all[0].url}`,buttonText:{displayText:'MP4📰'},type:1}]
-
-imageMessage = (await helga.prepareMessageMedia({url:res.all[0].image},'imageMessage',{thumbnail:Buffer.alloc(0)})).imageMessage
-
-buttonsMessage = {contentText: thumbInfo,footerText:'Silahkan Pilih Jenis File Dibawah Ini',imageMessage,buttons,headerType:4}
-
-prep = await helga.prepareMessageFromContent(from,{buttonsMessage},{})
-
-helga.relayWAMessage(prep)
-break
-case 'play2':
-   
-if (isMuted) return    
-   if (!isRegistered) return reply(`Registrasi Dulu Kak Ketik .verify`)
-				  if (args.length < 1) return reply('*Masukan judul nya?*')
-                reply('Loading.... ')
-				play = args.join(" ")
-				anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp4?q=${play}&apikey=apivinz`)
-				if (anu.error) return reply(anu.error)
-				infomp3 = `*「 PLAY VIDEO 」*
-				
-Judul : ${anu.result.title}
-Source : ${anu.result.source}
-				
-*[Wait] Tunggu Sebentar..*`
-				///////buffer = await getBuffer(anu.result.thumbnail)
-				buffer1 = await getBuffer(anu.result.url_video)
-				helga.sendMessage(from, buffer1, video, {mimetype: 'video/mp4', filename: `${anu.result.video}.mp4`, quoted: ftrol, caption: 'Nih Gan'})
-					break
-case 'ytmp3':
-if (!q)return reply(`Example : ${prefix + command} [Link]`)
-ppec = await fetchJson(`https://api.zekais.com/ytmp4?url=${q}&apikey=zekais`)
-ytt = `「 *YOUTUBE MP3* 」\n\n▢ *Judul :* ${ppec.title}\n▢ *Size : ${ppec.size}*\n▢ *Ext: Mp3*\n▢ *Like : ${ppec.likes}*\n▢ *Dislike : ${ppec.dislike}*\n▢ *Views : ${ppec.views}*\n▢ *Upload : ${ppec.uploadDate}*\n\n*[ Wait ]Tunggu Sebentar kak...*`
-buff = await getBuffer(ppec.thumb)
-reply(mess.wait)
-helga.sendMessage(from, buff, image, {quoted: mek, caption: ytt})
-sendMediaURL(from,ppec.result)
-break 
-case 'ytmp4':
-if (!isGroup) return reply(mess.only.group) 
-if (!q)return reply(`Example : ${prefix + command} [Link]`)
-
-mp4 = await fetchJson(`https://api.zekais.com/ytmp4?url=${q}&apikey=zekais`)
-
-ytt3 = `「 *YOUTUBE MP4* 」\n\n▢ *Judul :* ${mp4.title}\n▢ *Size : ${mp4.size}*\n▢ *Ext: Mp4*\n▢ *Quality : ${mp4.quality}*\n▢ *Like : ${mp4.likes}*\n▢ *Dislike : ${mp4.dislike}*\n▢ *Views : ${mp4.views}*\n▢ *Upload : ${mp4.uploadDate}*\n\n*[ Wait ]Tunggu Sebentar kak...*`
-
-buff = await getBuffer(mp4.thumb)
-
-reply(mess.wait)
-
-helga.sendMessage(from, buff, image, {quoted: mek, caption: ytt3})
-sendMediaURL(from,mp4.result,`「 *YOUTUBE MP4* 」\n▢ *Judul :* ${mp4.title}\n▢ *Size : ${mp4.size}*\n▢ *Ext: Mp4*\n▢ *Quality : ${mp4.quality}*`)
-
-break                
 						case 'ytsearch':
             
             if (!args.length) return reply('Judulnya apa kak?')
@@ -3952,12 +3890,6 @@ DONASI OM\nSESUNGGUH NYA ORANG YANG MEMBERI LEBIH BAIK DARI MENERIMA ☝\n\nDana
 									.inputFormat(media.split('.')[4])
 									.on('start', function (cmd) {
 										console.log(`Started : ${cmd}`)
-									})
-									.on('error', function (err) {
-										console.log(`Error : ${err}`)
-										fs.unlinkSync(media)
-										tipe = media.endsWith('.mp4') ? 'video' : 'gif'
-										reply(mess.error.api)
 									})
 									.on('end', function () {
 										console.log('Finish')
